@@ -1,0 +1,231 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?ecbk7');
+  src:  url('fonts/icomoon.eot?ecbk7#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ecbk7') format('truetype'),
+    url('fonts/icomoon.woff?ecbk7') format('woff'),
+    url('fonts/icomoon.svg?ecbk7#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-spinner:before {
+  content: "\e911";
+}
+.icon-loading:before {
+  content: "\e911";
+}
+.icon-loading-wheel:before {
+  content: "\e911";
+}
+.icon-busy:before {
+  content: "\e911";
+}
+.icon-wait:before {
+  content: "\e911";
+}
+.icon-circle-left:before {
+  content: "\e908";
+}
+.icon-left:before {
+  content: "\e908";
+}
+.icon-circle-previous:before {
+  content: "\e908";
+}
+.icon-arrow:before {
+  content: "\e908";
+}
+.icon-circle-right:before {
+  content: "\e909";
+}
+.icon-right:before {
+  content: "\e909";
+}
+.icon-circle-next:before {
+  content: "\e909";
+}
+.icon-arrow1:before {
+  content: "\e909";
+}
+.icon-obra:before {
+  content: "\e907";
+}
+.icon-light:before {
+  content: "\e906";
+}
+.icon-checkmark:before {
+  content: "\e901";
+}
+.icon-tick:before {
+  content: "\e901";
+}
+.icon-correct:before {
+  content: "\e901";
+}
+.icon-accept:before {
+  content: "\e901";
+}
+.icon-ok:before {
+  content: "\e901";
+}
+.icon-star-full:before {
+  content: "\e903";
+}
+.icon-rate1:before {
+  content: "\e903";
+}
+.icon-star1:before {
+  content: "\e903";
+}
+.icon-favorite:before {
+  content: "\e903";
+}
+.icon-bookmark:before {
+  content: "\e903";
+}
+.icon-star-empty:before {
+  content: "\e904";
+}
+.icon-rate2:before {
+  content: "\e904";
+}
+.icon-star2:before {
+  content: "\e904";
+}
+.icon-favorite1:before {
+  content: "\e904";
+}
+.icon-bookmark1:before {
+  content: "\e904";
+}
+.icon-hammer:before {
+  content: "\e905";
+}
+.icon-tool:before {
+  content: "\e905";
+}
+.icon-fix:before {
+  content: "\e905";
+}
+.icon-make:before {
+  content: "\e905";
+}
+.icon-generate:before {
+  content: "\e905";
+}
+.icon-work:before {
+  content: "\e905";
+}
+.icon-build:before {
+  content: "\e905";
+}
+.icon-mail:before {
+  content: "\ea85";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-bubble2:before {
+  content: "\e96e";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+.icon-telegram:before {
+  content: "\ea95";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-pinterest:before {
+  content: "\ead1";
+}
+.icon-pinterest2:before {
+  content: "\ead2";
+}
+.icon-alert-octagon:before {
+  content: "\e912";
+}
+.icon-arrow_forward_ios:before {
+  content: "\e90c";
+}
+.icon-arrow_back_ios:before {
+  content: "\e910";
+}
+.icon-commenting-o:before {
+  content: "\e902";
+}
+.icon-bubbles:before {
+  content: "\e90a";
+}
+.icon-bubble:before {
+  content: "\e90b";
+}
+.icon-comment:before {
+  content: "\e90b";
+}
+.icon-chat:before {
+  content: "\e90b";
+}
+.icon-talk:before {
+  content: "\e90b";
+}
+.icon-coffeecup:before {
+  content: "\e90d";
+}
+.icon-mao-na-massa:before {
+  content: "\e90e";
+}
+.icon-pencil:before {
+  content: "\e90f";
+}
+.icon-edit:before {
+  content: "\e90f";
+}
+.icon-blog:before {
+  content: "\e90f";
+}
+.icon-write:before {
+  content: "\e90f";
+}
+.icon-coffee:before {
+  content: "\e900";
+}
+.icon-cup:before {
+  content: "\e900";
+}
+.icon-drink:before {
+  content: "\e900";
+}
+.icon-break:before {
+  content: "\e900";
+}

@@ -1,0 +1,575 @@
+
+// @import 'compass';
+@import '../icomoon/style.css';
+/***/
+// color vars
+/*RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+* {
+  box-sizing: border-box
+}
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/*CLEARFIX*/
+.clearfix:after {
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility: hidden;
+}
+.clearfix {
+  display:inline;
+}
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+body {
+  font-family: 'Assistant', sans-serif;
+  color: $color-main;
+  font-size: 1em;
+}
+
+.hide {
+  display: none;
+}
+.pagetop {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  // width: 100vw;
+  padding: .5vw 0;
+  background-color: $color-main;
+  // box-shadow: 1px 5px 10px rgba(#EDEDED, 0.5);
+
+  @include small {
+    padding: 2vh 0;
+  }
+}
+
+.pagetop__page-logo {
+  font-size: 1.3em;
+
+  @include small {
+    font-size: 2em;
+  }
+
+  .logo {
+    padding: 0.3vw;
+    text-align: center;
+
+    a {
+      display: flex;
+      flex-direction: col;
+      text-decoration: none;
+    }
+
+    .signo {
+      // display: inline-block;
+      height: 1.8em;
+      padding-right: .2em;
+
+      @include small {
+        height: 1em;
+      }
+    }
+
+    p {
+      color: $color7;
+      font-size: 1.3em;
+      align-self: flex-end;
+
+      @include small {
+        font-size: .8em;
+      }
+
+      span {
+        text-align: left;
+        font-size: .45em;
+        // font-weight: bold;
+        @include small {
+          font-size: .5em;
+        }
+      }
+    }
+  }
+}
+
+.pagetop__main-nav {
+
+  @include small {
+    display: none;
+  }
+
+  &.mobomenu {
+
+    @include small {
+      display: block;
+      position: absolute;
+      background: $color3;
+      right: 10px;
+      top: 45px;
+    }
+  }
+
+
+  li {
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    a {
+      color: $color5;
+      text-decoration: none;
+
+      &:hover, &.active {
+        color: $color4;
+      }
+    }
+
+    @include small {
+      line-height: 40px;
+      padding: 0 10px;
+      border-bottom: 1px solid #000;
+    }
+
+    @include fhd {
+      float: left;
+      margin: 0 1em;
+    }
+  }
+}
+
+.pagetop__page-info {
+
+  .logout {
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+  }
+
+  .phone {
+    text-align: center;
+
+    i {
+      font-size: 1.4vw;
+      vertical-align: middle;
+
+      @include small {
+        font-size: 3.5vw;
+      }
+    }
+
+    a {
+      color: white;
+      font-weight: 600;
+      border-radius: 10px;
+      padding: .4em;
+      text-decoration: none;
+      border: 1px solid $color-main;
+
+      @include small {
+        font-size: 3.5vw;
+      }
+    }
+  }
+}
+
+.maincontent {
+  margin-top: 90px;
+}
+
+[class*='sitecont'] {
+  padding: 2vw 0;
+  // color: $color-main;
+  // background: rgba(33,41,72,0.2);
+  // box-shadow: -10px 5px 15px rgba(#CCC, 0.9);
+  margin-left: auto;
+  margin-right: auto;
+
+  @include fhd {
+    width: 70%;
+  }
+
+  @include small {
+    width: 90%;
+  }
+
+  p {
+    line-height: 1.4em;
+    // margin-bottom: 1.5em;
+  }
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+
+  li {
+    margin-right: 1em;
+  }
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+    color: $color-main;
+    font-size: 1.4em;
+    vertical-align: middle;
+
+    @include small {
+    }
+  }
+}
+
+.main-footer {
+  background-color: $color-main;
+  color: $color5;
+  display: flex;
+  padding: 1.5vw;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.2em;
+
+  @include small {
+    flex-wrap: wrap;
+  }
+
+  @include fhd {
+    font-size: 1.2em;
+  }
+
+  b {
+    font-weight: 700;
+  }
+
+  .side {
+    width: 50%;
+
+    @include small {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .contact-form {
+
+    @include small {
+      order: 1;
+    }
+  }
+
+  h4 {
+    margin-bottom: 5em;
+    letter-spacing: 2px;
+    line-height: 1.3;
+  }
+
+  .contact-info {
+    line-height: 1.5;
+
+    @include small {
+      order: 2;
+    }
+
+    a {
+      color: $color4;
+      font-weight: bold;
+    }
+  }
+
+  .social {
+    margin: 3em 0;
+
+    i {
+      color: $color4;
+    }
+  }
+
+  .contact-form {
+
+    .fakefieldset {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+
+      @include small {
+        flex-wrap: wrap;
+      }
+
+    }
+
+    .formside {
+      width: 50%;
+
+      @include small {
+        width: 100%;
+      }
+    }
+
+    legend {
+      font-weight: bold;
+      margin-bottom: 5em;
+    }
+
+    .formP {
+      margin-bottom: 1em;
+    }
+
+    label {
+      display: none;
+    }
+
+    input, textarea {
+      border: 1px solid $color-main;
+      background-color: $color4;
+      padding: 1em .5em;
+      width: 95%;
+      color: $color-main;
+
+      &:focus {
+        background-color: $color-main;
+        color: $color4;
+      }
+    }
+
+    textarea {
+      padding: .4em;
+    }
+
+    button {
+      float: right;
+      margin-right: 2.5%;
+      border: 1px solid $color4;
+      color: $color4;
+      background-color: $color2;
+      padding: .8em;
+
+      &:hover {
+        color: #FFF;
+      }
+
+      &:disabled {
+        border: 1px inset $color-main;
+        background-color: #CCC;
+      }
+    }
+
+    .error {
+      color: red;
+      font-size: .7em;;
+    }
+
+    .ok {
+      color: #F0F0F0;
+      font-size: .7em;
+    }
+
+  }
+}
+
+.loader {
+  color: #F0F0F0;
+  font-size: .7em;
+  position: relative;
+
+  i {
+    font-size: 1.3em;
+    position: absolute;
+    left: 70px;
+    animation: spin 2s linear infinite;
+  }
+}
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+.centered {
+  text-align: center;
+}
+.rTtl {
+  font-size: 1.4em;
+  font-weight: 500;
+  text-align: left;
+  margin: 1em 0;
+  color: $color5;
+  letter-spacing: 3px;
+  line-height: 1.5;
+  font-weight: bolder;
+
+  span {
+    display: inline-block;
+    // padding: .1em;
+    background-color: $color5;
+  }
+
+  @include fhd {
+    font-size: 2em;
+  }
+  @include small {
+    font-size: 1em;
+  }
+}
+
+.hrTtl {
+  font-size: 2em;
+  font-weight: 500;
+  margin: 1.5em 0;
+  color: $color2;
+  letter-spacing: 3px;
+  line-height: 1.2;
+
+  @include small {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  &.alt {
+    color: #FFF;
+    b, span {
+      background-color: $color-main;
+
+    }
+
+    .handwriting {
+      color: $color-main;
+      background-color: #fff;
+    }
+  }
+
+  .handwriting {
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+}
+
+.sttl {
+  font-style: italic;
+  font-size: 2em;
+  margin-bottom: .3em;
+
+  @include fhd {
+    font-size: 1.4em;
+  }
+
+  @include small {
+    font-size: 3.5vw;
+  }
+}
+
+.hlight {
+  color: $color-main;
+  font-weight: bold;
+}
+
+.handwriting {
+  font-family: 'Yrsa', serif;
+}
+
+.buttonreg {
+  border: 0;
+  border-radius: 10px;
+  padding: .5vw 1vw;
+  color: #FFF;
+  font-size: 1.5vw;
+
+  @include small {
+    padding: .5vh 1vh;
+    font-size: 1.8vh;
+  }
+}
+
+.link_button {
+  color: $color-main;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  border: 2px solid $color-main;
+  padding: .8em 1.2em;
+  font-size: .8em;
+  margin: 1em auto;
+}
+
+.formreg {
+   div {
+    margin: 1em 0;
+  }
+
+  .inputreg {
+    line-height: 1.5vw;
+    height: 2vw;
+    width: 20vw;
+
+    @include small {
+      width: 100%;
+      height: 4vh;
+      line-height: 4vh;
+    }
+  }
+
+}
+
+b {
+    font-weight: bold;
+}
+.reglist {
+  list-style: inside;
+  margin-bottom: 1em;
+
+  li {
+    margin-bottom: 1em;
+  }
+}

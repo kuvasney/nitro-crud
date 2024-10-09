@@ -1,0 +1,37 @@
+{
+  "editor.fontSize": 12,
+  "editor.fontLigatures": true,
+  "editor.fontVariations": false,
+  "editor.fontWeight": "normal",
+  "editor.tabSize": 2,
+  "editor.formatOnPaste": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "eslint.format.enable": true,
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "eslint.validate": [
+    "javascript"
+  ],
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "window.zoomLevel": 0,
+  "diffEditor.codeLens": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "stylelint.validate": [
+    "css",
+    "less",
+    "scss",
+    "postcss"
+  ],
+  "stylelint.config": {},
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false
+}

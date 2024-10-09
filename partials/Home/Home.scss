@@ -1,0 +1,249 @@
+#projetos {
+  background: rgba($color4, .5);
+  // background-size: 100% 100%;
+  // padding: 60px 0;
+
+  @include small {
+    // padding: 30px 0;
+    // background-size: auto 50%;
+  }
+
+  .rTtl {
+    font-size: 2.5em;
+    color: $color-main;
+  }
+}
+
+.last-projects {
+
+  @include fhd {
+    margin-bottom: 100px;
+  }
+
+  li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 2.5em;
+
+    img {
+      width: 45%;
+      height: auto;
+      height: intrinsic; /*Safari*/
+
+      @include small {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .last-projects__details {
+      padding: 0 10%;
+
+      @include fhd {
+        width: 50%;
+      }
+
+      @include small {
+        padding: 0 5px;
+      }
+    }
+
+    .last-projects__name {
+      color: $color-main;
+      font-size: 2.2em;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .last-projects__place {
+      color: $color-main;
+      font-size: 1.4em;
+      margin-bottom: 1.5em;
+    }
+
+    .last-projects__description,
+    .top-line {
+      color: $color2;
+      font-size: 1.2em;
+      margin-bottom: 1.5em;
+    }
+
+    // &:nth-child(even) {
+
+    //   img {
+    //     order: 2;
+    //   }
+
+    //   .last-projects__details {
+    //     order: 1;
+    //   }
+    // }
+  }
+}
+
+#depoimentos {
+  overflow: hidden;
+  position: relative;
+  background: rgba($color: $color2, $alpha: 1.0);
+  background-size: cover;
+
+  .rTtl {
+    color: $color2;
+  }
+
+  .bg {
+    background: rgba(#FFF, .9);
+    position: relative;
+    padding: 2em;
+  }
+}
+.clients-testimonials {
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+  li {
+    text-align: center;
+    width: 25%;
+    padding-bottom: 5em;
+    position: relative;
+
+    @include small {
+      width: 50%;
+    }
+
+    span {
+      // font-style: italic;
+      font-size: 1.8em;
+      color: $color-main;
+
+      @include small {
+        font-size: 1.1em;
+      }
+    }
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1.4;
+    padding: 20px;
+    margin-bottom: .3em;
+
+    @include fhd {
+      font-size: 1.2em;
+    }
+
+    @include small {
+      font-size: .8em;
+    }
+
+    &::before {
+      content: "\201D";
+      font-size: 5em;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      color: $color-main;
+    font-family: 'Alex Brush', cursive;
+
+      @include small {
+        font-size: 20vw;
+      }
+    }
+  }
+
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @include small {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+  }
+
+  li {
+    color: $color-main;
+    font-size: 1.8vw;
+    margin-bottom: 1.5vw;;
+    @include fhd {
+      font-size: 1.2vw;
+    }
+    @include small {
+      font-size: 3.5vw;
+    }
+
+    a {
+      color: $color-main;
+      text-decoration: none;
+    }
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  .modal__close {
+    position: absolute;
+    top: 0;
+    right: 1em;
+    font-size: 3vw;
+    color: $color-main;
+    font-weight: 700;
+    cursor: pointer;
+    @include small {
+      font-size: 6vw;
+    }
+  }
+
+  .modal__background {
+    position: absoute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(#CCC, .9);
+  }
+
+  .modal__content {
+    width: 100%;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: auto;
+      height: 90vh;
+      border: 5px solid $color-main;
+      @include small {
+        width: 90vw;
+        height: auto;
+        max-height: 90vh;
+      }
+    }
+  }
+}
+
+
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active em versões anteriores a 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}

@@ -1,0 +1,57 @@
+  <div>
+    <article id="projetos">
+      <div class="sitecont" v-if="projectList?.length > 0">
+        <h2 class="rTtl handwriting">
+          Obras
+        </h2>
+        <ul class="last-projects">
+          <li v-for="(project, index) of projectList">
+            <img :src="`/uploads/obras/${project.fotos[project.fotoDestaque].nomeArquivo}`" :alt="project.nome">
+            <div class="last-projects__details">
+              <p class="top-line">
+                {{ project.tipo }}
+              </p>
+              <h4 class="last-projects__name handwriting">
+                {{ project.nome }}
+              </h4>
+              <p class="last-projects__place">
+                {{ project.local }}
+              </p>
+              <p class="last-projects__description">
+                {{ project.descricao }}
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="sitecont" v-else>
+        <p class="loader">
+          <i class="icon-loading icon"></i>
+        </p>
+      </div>
+    </article>
+    <article id="depoimentos">
+      <div class="bg" v-if="depoimentosList?.length > 0">
+        <h2 class="rTtl handwriting">
+          <span>
+            O que os clientes <b>dizem</b>?
+          </span>
+        </h2>
+        <section class="clients-testimonials">
+          <ul>
+            <li v-for="depoimento in depoimentosList">
+              <span class="handwriting">{{ depoimento.nome }}{{ depoimento.referencia ? `, ${depoimento.referencia}` : '' }}</span>
+              <p>
+                {{ depoimento.depoimento }}
+              </p>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="sitecont" v-else>
+        <p class="loader">
+          <i class="icon-loading icon"></i>
+        </p>
+      </div>
+    </article>
+  </div>
