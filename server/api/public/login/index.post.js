@@ -27,7 +27,6 @@ export default defineEventHandler(async (event) => {
       }
     }
 
-    console.log('config.JWT_SECRET', config.JWT_SECRET);
     // Generate JWT token
     const token = jwt.sign({ email: existingUser.email }, config.JWT_SECRET);
     setResponseStatus(event, 200)

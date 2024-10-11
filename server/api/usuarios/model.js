@@ -37,5 +37,5 @@ usuariosSchema.pre('save', async function (next) {
 });
 
 
-export const UsuariosModel = model('Usuarios', usuariosSchema); // tabela Usuarios
+export const UsuariosModel = model('usuarios', usuariosSchema); // tabela Usuarios
 

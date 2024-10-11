@@ -57,7 +57,7 @@ export default defineComponent({
     })
 
     useHead({
-      title: "Dashboard Jessica Saka"
+      title: "Dashboard Nitro Admin"
     })
 
     const ativarSessao = (sessao) => {

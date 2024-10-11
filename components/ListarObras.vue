@@ -67,7 +67,6 @@ export default defineComponent({
 
       layoutStore.toggleLoading(true)
       try {
-        console.log('ooooooo', );
         obrasList.value = await getObras()
         if (!obrasList) {
           throw new Error('Erro ao listar obras')
